@@ -1,5 +1,5 @@
 body {
-    background-color: #121212;
+    background-color: #f4f6f8;
     font-family: 'Kanit', sans-serif;
 }
 
@@ -8,7 +8,8 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #1f1f1f;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.01);
 }
 
 li {
@@ -18,7 +19,7 @@ li {
 li a,
 .dropbtn {
     display: inline-block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -26,8 +27,8 @@ li a,
 
 li a:hover,
 .dropdown:hover .dropbtn {
-    background-color: white;
-    color: black;
+    background-color: #9ab3da;
+    color: white;
 }
 
 li.dropdown {
@@ -37,14 +38,14 @@ li.dropdown {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #2e2e2e;
+    background-color: #f5f5f5;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: white;
+    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -52,7 +53,7 @@ li.dropdown {
 }
 
 .dropdown-content a:hover {
-    background-color: #363636;
+    background-color: #9ab3da;
     color: white;
 }
 
@@ -62,7 +63,7 @@ li.dropdown {
 
 .profile-name {
     text-align: center;
-    color: white;
+    color: black;
 }
 
 img.profile-img{
