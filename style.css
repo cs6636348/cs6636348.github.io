@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #121212;
     font-family: 'Kanit', sans-serif;
 }
@@ -58,4 +58,17 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.profile-name {
+    text-align: center;
+    color: white;
+}
+
+img.profile-img{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    width: 15%;
+    border-radius: 50%;
 }
