@@ -1,37 +1,58 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	<style>
-		.menu {
-			background-color: black;
-			color: white;
-			text-align: center;
-			width: 30%;
-		}
-		.content {
-			background-color: gainsboro;
-			width: 60%;
-		}
-		.ads {
-			background-color: cornflowerblue;
-			width: 10%;
-		}
-		.flex { 
-			display: flex; 
-		}
-		@media (max-width : 600px) {
-			.flex { display: block; }
-			.menu { width: auto; }
-			.content { width: auto; }
-			.ads { width: auto; display: none;}
-		}
-	</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .flex {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .menu {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .content {
+      background-color: gainsboro;
+      padding: 10px;
+    }
+
+    .ads {
+      background-color: cornflowerblue;
+      padding: 10px;
+    }
+
+    @media (min-width: 601px) {
+      .flex {
+        flex-direction: row;
+      }
+
+      .menu {
+        flex-grow: 10;
+      }
+
+      .content {
+        flex-grow: 20;
+      }
+
+      .ads {
+        flex-grow: 5;
+      }
+    }
+  </style>
 </head>
 <body>
-	<div class="flex">
-		<div class="menu">Menu1<br>Menu2<br>Menu3<br></div>
-		<div class="content">In publishing, art, and communication, … as speech, writing or any of various arts".</div>
-		<div class="ads">advertising<br>advertising<br>advertising<br></div>
-	</div>
+  <div class="flex">
+    <div class="menu">Menu1<br>Menu2<br>Menu3<br></div>
+    <div class="content">In publishing, art, and communication, … as speech, writing or any of various arts.</div>
+    <div class="ads">advertising<br>advertising<br>advertising<br></div>
+  </div>
 </body>
 </html>
