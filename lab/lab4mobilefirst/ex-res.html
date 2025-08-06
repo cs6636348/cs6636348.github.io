@@ -7,52 +7,52 @@
       box-sizing: border-box;
     }
 
-    .flex {
+    main {
       display: flex;
       flex-direction: column;
     }
 
-    .menu {
+    nav {
       background-color: black;
       color: white;
       text-align: center;
       padding: 10px;
     }
 
-    .content {
+    section {
       background-color: gainsboro;
       padding: 10px;
     }
 
-    .ads {
+    aside {
       background-color: cornflowerblue;
       padding: 10px;
     }
 
     @media (min-width: 601px) {
-      .flex {
+      main {
         flex-direction: row;
       }
 
-      .menu {
+      nav {
         flex-grow: 10;
       }
 
-      .content {
+      section {
         flex-grow: 20;
       }
 
-      .ads {
+      aside {
         flex-grow: 5;
       }
     }
   </style>
 </head>
 <body>
-  <div class="flex">
-    <div class="menu">Menu1<br>Menu2<br>Menu3<br></div>
-    <div class="content">In publishing, art, and communication, … as speech, writing or any of various arts.</div>
-    <div class="ads">advertising<br>advertising<br>advertising<br></div>
-  </div>
+  <main>
+    <nav>Menu1<br>Menu2<br>Menu3<br></nav>
+    <section>In publishing, art, and communication, … as speech, writing or any of various arts.</section>
+    <aside>advertising<br>advertising<br>advertising<br></aside>
+  </main>
 </body>
 </html>
