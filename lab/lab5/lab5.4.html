@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dropdown from Array</title>
+</head>
+<body>
+    <form id="myForm">
+        <select id="selectNumber">
+            <option>Choose a number</option>
+        </select>
+    </form>
+
+    <script>
+        let myArray = ["1", "2", "3", "4", "5"];
+
+        // Get dropdown element from DOM
+        let dropdown = document.getElementById("selectNumber");
+
+        // Clear existing options first (ยกเว้นอันแรก)
+        dropdown.innerHTML = "<option>Choose a number</option>";
+
+        // Loop through the array and add options
+        for (let i = 0; i < myArray.length; i++) {
+            let option = document.createElement("option");
+            option.value = myArray[i];
+            option.text = myArray[i];
+            dropdown.add(option);
+        }
+    </script>
+</body>
+</html>

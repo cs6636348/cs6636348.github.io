@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function addList() {
+            var name = document.getElementById("customer");
+            var address = document.getElementById("address");
+            var phone = document.getElementById("phone");
+
+            if (!name.value | !address.value | !phone.value) {
+                return;
+            }
+
+            var table = document.getElementById("table");
+            var lists = document.createElement("tr");
+
+            lists.innerHTML = "<td>"+ name.value + "</td>" +
+                              "<td>"+ address.value + "</td>" +
+                              "<td>"+ phone.value + "</td>";
+            
+            table.appendChild(lists);
+        }
+    </script>
+
+    <style>
+        table {
+            margin-top: 20px;
+            border: 1px solid black;
+            /* border-collapse: collapse; */
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <label>ชื่อลูกค้า :</label>
+    <input
+        type="text"
+        id="customer"
+        required
+    ><br>
+
+    <label>ที่อยู่ :</label>
+    <input
+        type="text"
+        id="address"
+        required
+    ><br>
+
+    <label>โทรศัพท์ :</label>
+    <input
+        type="tel"
+        id="phone"
+        required
+    ><br>
+
+    <input type="submit" value="เพิ่ม" onclick="addList()"> 
+    
+    <table id="table">
+        <tr>
+            <th>ชื่อลูกค้า</th>
+            <th>ที่อยู่</th>
+            <th>โทรศัพท์</th>
+        </tr>
+    </table>
+</body>
+</html>

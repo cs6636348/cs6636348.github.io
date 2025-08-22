@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function changecolor(element) {
+            element.style.color = "green";
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label>Name: </label>
+        <input
+            type="text"
+            id="name"
+            oninput="changecolor(this)"
+        ><br>
+
+        <label>Age: </label>
+        <input
+            type="text"
+            id="age"
+            oninput="changecolor(this)"
+        ><br>
+
+        <label>Birthday: </label>
+        <input
+            type="text"
+            id="birthday"
+            oninput="changecolor(this)"
+        ><br>
+    </form>
+</body>
+</html>
